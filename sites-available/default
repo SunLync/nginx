@@ -27,7 +27,7 @@ server {
 	#
 	listen 443 ssl default_server;
 	listen [::]:443 ssl default_server;
-	
+	ssl_protocols TLSv1.2;
 	location ~ /.well-known {
 		allow all;
 	}
